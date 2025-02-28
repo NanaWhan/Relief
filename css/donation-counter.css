@@ -1,0 +1,120 @@
+/* Donation Counter Styles */
+.donation-counter {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.donation-counter h3 {
+  color: var(--dark-color);
+  margin-bottom: 20px;
+}
+
+.donation-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.donation-goal {
+  font-size: 1rem;
+  color: var(--body-text-color);
+  margin-bottom: 20px;
+}
+
+.donation-progress-container {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.donation-progress {
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  transition: width 0.5s ease-in-out;
+}
+
+.donation-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.donation-stat {
+  text-align: center;
+}
+
+.donation-stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.donation-stat-label {
+  font-size: 0.9rem;
+  color: var(--body-text-color);
+}
+
+#donation-notification {
+  position: fixed;
+  bottom: 20px;
+  right: -300px;
+  background-color: var(--dark-color);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: right 0.3s ease-in-out;
+}
+
+#donation-notification.show {
+  right: 20px;
+}
+
+/* Partner Logos Section */
+.partner-logos {
+  padding: 40px 0;
+  background-color: white;
+}
+
+.partner-logos h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.partner-logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.partner-logo img {
+  max-height: 80%;
+  max-width: 80%;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.partner-logo img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Team Member Styles */
+.team-member .member-avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent-color);
+}
