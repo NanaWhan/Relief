@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/donation-counter.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -190,6 +191,49 @@
       />
     </section>
 
+    <!-- ADDED: Donation Counter Section -->
+    <section id="donation-counter" class="bg-light padding-medium">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="donation-counter text-center">
+              <h3>Help Us Reach Our Goal</h3>
+              <div class="donation-amount" id="donation-amount">
+                GHS 148,765
+              </div>
+              <div class="donation-goal">of GHS 300,000 goal</div>
+              <div class="donation-progress-container">
+                <div
+                  class="donation-progress"
+                  id="donation-progress"
+                  role="progressbar"
+                  aria-valuenow="49"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 49%"
+                ></div>
+              </div>
+              <div class="donation-stats">
+                <div class="donation-stat">
+                  <div class="donation-stat-number" id="donors-count">324</div>
+                  <div class="donation-stat-label">Donors</div>
+                </div>
+                <div class="donation-stat">
+                  <div class="donation-stat-number">28</div>
+                  <div class="donation-stat-label">Days Left</div>
+                </div>
+                <div class="donation-stat">
+                  <div class="donation-stat-number">5,642</div>
+                  <div class="donation-stat-label">Meals Served</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="donation-notification"></div>
+    </section>
+
     <section id="about" class="padding-large">
       <div class="container">
         <div class="row">
@@ -209,17 +253,17 @@
             <div class="team-section bg-light rounded-lg p-5">
               <h3 class="text-center mb-5">Our Core Team</h3>
               <div class="row g-4">
+                <!-- UPDATED: Team Member with Image -->
                 <div class="col-md-4">
                   <div
                     class="team-member text-center bg-white p-4 rounded shadow-sm h-100"
                   >
                     <div class="member-avatar mb-3">
-                      <div
-                        class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto"
-                        style="width: 80px; height: 80px"
-                      >
-                        <span class="h4 mb-0">MO</span>
-                      </div>
+                      <img
+                        src="images/team/minkaila.jpg"
+                        alt="Minkaila Odonkor"
+                        class="mx-auto"
+                      />
                     </div>
                     <h4 class="mb-2">Minkaila Odonkor</h4>
                     <p class="text-primary mb-2">Project Coordinator</p>
@@ -229,17 +273,17 @@
                   </div>
                 </div>
 
+                <!-- UPDATED: Team Member with Image -->
                 <div class="col-md-4">
                   <div
                     class="team-member text-center bg-white p-4 rounded shadow-sm h-100"
                   >
                     <div class="member-avatar mb-3">
-                      <div
-                        class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto"
-                        style="width: 80px; height: 80px"
-                      >
-                        <span class="h4 mb-0">AM</span>
-                      </div>
+                      <img
+                        src="images/team/mohammed.jpg"
+                        alt="Abdul-Jeleel Mohammed"
+                        class="mx-auto"
+                      />
                     </div>
                     <h4 class="mb-2">Abdul-Jeleel Mohammed</h4>
                     <p class="text-primary mb-2">Operations & Logistics</p>
@@ -249,17 +293,17 @@
                   </div>
                 </div>
 
+                <!-- UPDATED: Team Member with Image -->
                 <div class="col-md-4">
                   <div
                     class="team-member text-center bg-white p-4 rounded shadow-sm h-100"
                   >
                     <div class="member-avatar mb-3">
-                      <div
-                        class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto"
-                        style="width: 80px; height: 80px"
-                      >
-                        <span class="h4 mb-0">HO</span>
-                      </div>
+                      <img
+                        src="images/team/hudu.jpg"
+                        alt="Hudu Odonkor"
+                        class="mx-auto"
+                      />
                     </div>
                     <h4 class="mb-2">Hudu Odonkor</h4>
                     <p class="text-primary mb-2">
@@ -269,17 +313,17 @@
                   </div>
                 </div>
 
+                <!-- UPDATED: Team Member with Image -->
                 <div class="col-md-4">
                   <div
                     class="team-member text-center bg-white p-4 rounded shadow-sm h-100"
                   >
                     <div class="member-avatar mb-3">
-                      <div
-                        class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto"
-                        style="width: 80px; height: 80px"
-                      >
-                        <span class="h4 mb-0">SA</span>
-                      </div>
+                      <img
+                        src="images/team/samira.jpg"
+                        alt="Samira Abdul"
+                        class="mx-auto"
+                      />
                     </div>
                     <h4 class="mb-2">Samira Abdul</h4>
                     <p class="text-primary mb-2">Media & Communications Lead</p>
@@ -287,17 +331,17 @@
                   </div>
                 </div>
 
+                <!-- UPDATED: Team Member with Image -->
                 <div class="col-md-4">
                   <div
                     class="team-member text-center bg-white p-4 rounded shadow-sm h-100"
                   >
                     <div class="member-avatar mb-3">
-                      <div
-                        class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto"
-                        style="width: 80px; height: 80px"
-                      >
-                        <span class="h4 mb-0">NL</span>
-                      </div>
+                      <img
+                        src="images/team/nafisa.jpg"
+                        alt="Nafisa Labaran"
+                        class="mx-auto"
+                      />
                     </div>
                     <h4 class="mb-2">Nafisa Labaran</h4>
                     <p class="text-primary mb-2">Monitoring & Evaluation</p>
@@ -383,22 +427,46 @@
           <div class="col-md-6 mb-5">
             <h3 class="h4 mb-4">Donate Today</h3>
 
+            <!-- UPDATED: Donation Option with data-amount -->
             <div class="donation-option mb-4">
               <h4 class="h5 mb-2">Individual Meal</h4>
               <p class="text-muted mb-2">GHS 50 per person</p>
-              <button class="btn btn-warning rounded-pill px-4">Donate</button>
+              <button
+                class="btn btn-warning rounded-pill px-4 donate-button"
+                data-amount="50"
+                data-bs-toggle="modal"
+                data-bs-target="#mobileMoneyModal"
+              >
+                Donate
+              </button>
             </div>
 
+            <!-- UPDATED: Donation Option with data-amount -->
             <div class="donation-option mb-4">
               <h4 class="h5 mb-2">Monthly Package (Individual)</h4>
               <p class="text-muted mb-2">GHS 1,500</p>
-              <button class="btn btn-warning rounded-pill px-4">Donate</button>
+              <button
+                class="btn btn-warning rounded-pill px-4 donate-button"
+                data-amount="1500"
+                data-bs-toggle="modal"
+                data-bs-target="#mobileMoneyModal"
+              >
+                Donate
+              </button>
             </div>
 
+            <!-- UPDATED: Donation Option with data-amount -->
             <div class="donation-option">
               <h4 class="h5 mb-2">Monthly Package (Family)</h4>
               <p class="text-muted mb-2">GHS 3,000</p>
-              <button class="btn btn-warning rounded-pill px-4">Donate</button>
+              <button
+                class="btn btn-warning rounded-pill px-4 donate-button"
+                data-amount="3000"
+                data-bs-toggle="modal"
+                data-bs-target="#mobileMoneyModal"
+              >
+                Donate
+              </button>
             </div>
           </div>
 
@@ -598,7 +666,8 @@
               class="payment-options d-flex flex-column flex-md-row justify-content-center gap-3"
             >
               <button
-                class="btn btn-warning btn-lg rounded-pill px-4 py-2"
+                class="btn btn-warning btn-lg rounded-pill px-4 py-2 donate-button"
+                data-amount="1000"
                 data-bs-toggle="modal"
                 data-bs-target="#mobileMoneyModal"
               >
@@ -699,6 +768,91 @@
                 Send Message
               </button>
             </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADDED: Partner Logos Section -->
+    <section id="partners" class="partner-logos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <h3 class="text-center mb-5">Our Partners & Sponsors</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner1.jpg"
+                alt="Partner 1"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner2.jpg"
+                alt="Partner 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner3.jpg"
+                alt="Partner 3"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner4.jpg"
+                alt="Partner 4"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner5.jpg"
+                alt="Partner 5"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner6.jpg"
+                alt="Partner 6"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner7.jpg"
+                alt="Partner 7"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="partner-logo">
+              <img
+                src="images/partners/partner8.jpg"
+                alt="Partner 8"
+                class="img-fluid"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -939,5 +1093,7 @@
     <script src="plugins/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
+    <!-- ADDED: Donation Counter Script -->
+    <script src="js/donation-counter.js"></script>
   </body>
 </html>
